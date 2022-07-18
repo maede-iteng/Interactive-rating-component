@@ -1,0 +1,86 @@
+@import "config.module";
+
+.card{
+  width: 390px;
+  height: 375px;
+  background-color: $neutral-DarkBlue;
+  @include rounded(20px);
+  padding: 2rem 1.5rem;
+
+  &__iconWrapper{
+    width: 40px;
+    height: 40px;
+    @include rounded(50%);
+    background-color: hsla(216, 12%, 54%,.3);
+    @include display-flex(center,center);
+    margin-bottom: 1.5rem;
+  }
+  h2{
+    color: $neutral-white;
+    line-height: 48px;
+  }
+  p{
+    color: $neutral-LightGrey;
+    line-height: 24px;
+    font-size: $font-size;
+  }
+  &__ratingWrapper{
+    @include display-flex(space-between,center);
+    .circle{
+      width: 50px;
+      height: 50px;
+      @include rounded(50%);
+      background-color: hsla(216, 12%, 54%,.3);;
+      border:none;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: all .2s linear;
+      &:hover{
+        background-color: $primary-color;
+        transition: all .2s linear;
+      }
+      &:active{
+        .active{
+          background-color: $neutral-LightGrey;
+        }
+      }
+    }
+  }
+  &__submitBtn{
+    background-color: $primary-color;
+    color: $neutral-white;
+    border: none;
+    width: 100%;
+    padding: .8rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+    @include rounded(30px);
+    cursor: pointer;
+    transition: all .2s linear;
+    &:hover{
+      color: $primary-color;
+      background-color: $neutral-white;
+      transition: all .2s linear;
+    }
+  }
+}
+.ratedCard{
+  @include display-flex(center,center);
+  flex-direction: column;
+  .resultWrapper{
+    background-color: hsla(216, 12%, 54%,.3);
+    padding: .3rem 1rem;
+    @include rounded(15px);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    p{
+      color: $primary-color;
+    }
+  }
+
+  .message{
+   text-align: center;
+  }
+}

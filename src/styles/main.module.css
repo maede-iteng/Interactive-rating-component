@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700;");
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@300;400;700;");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Karla", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  width: 390px;
+  height: 375px;
+  background-color: #252d37;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+}
+.card__iconWrapper {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(124, 135, 152, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.card h2 {
+  color: white;
+  line-height: 48px;
+}
+.card p {
+  color: #959eac;
+  line-height: 24px;
+  font-size: 15px;
+}
+.card__ratingWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card__ratingWrapper .circle {
+  width: 50px;
+  height: 50px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  background-color: rgba(124, 135, 152, 0.3);
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.2s linear;
+}
+.card__ratingWrapper .circle:hover {
+  background-color: #fb7413;
+  transition: all 0.2s linear;
+}
+.card__ratingWrapper .circle:active .active {
+  background-color: #959eac;
+}
+.card__submitBtn {
+  background-color: #fb7413;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+  font-weight: 700;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.card__submitBtn:hover {
+  color: #fb7413;
+  background-color: white;
+  transition: all 0.2s linear;
+}
+
+.ratedCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.ratedCard .resultWrapper {
+  background-color: rgba(124, 135, 152, 0.3);
+  padding: 0.3rem 1rem;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.ratedCard .resultWrapper p {
+  color: #fb7413;
+}
+.ratedCard .message {
+  text-align: center;
+}
+
+body {
+  background-color: #121417;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+/*# sourceMappingURL=main.module.css.map */

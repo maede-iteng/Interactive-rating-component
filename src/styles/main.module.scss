@@ -1,0 +1,10 @@
+@import "config.module";
+@import "card.module";
+
+body{
+  background-color: $neutral-VeryDarkBlue;
+}
+.container{
+  @include display-flex(center,center);
+  margin-top: 5rem;
+}
